@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  border: none;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --font-family: "Nunito Sans", sans-serif;
+  --menu-nav-text: #dee2e6;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
