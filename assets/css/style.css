@@ -62,7 +62,7 @@ body {
   left: 35%;
   margin-top: 3.5px;
   width: 70vh;
-  font-size: 16px;
+  font-size: 17px;
 }
 .links {
   position: relative;
@@ -109,17 +109,17 @@ body {
   border-radius: 10px;
   right: 1.1rem;
   top: 60px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 2;
   background-color: rgba(45, 46, 46, 0.15);
-  box-shadow: 0 0 13px #92b8e4;
+  box-shadow: 0 0 13px #3e679e;
   height: 0;
   overflow: hidden;
   transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 .header__dropdown-menu.open {
   padding: 10px 20px;
-  height: 160px;
+  height: 167px;
 }
 .dropdown-icons {
   margin-right: 8px;
@@ -130,4 +130,49 @@ body {
   margin: 10px 0 10px 0;
   overflow: hidden;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.main {
+  font-family: var(--font-family);
+}
+.main__container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 15vh;
+}
+.main__avatar {
+  box-shadow: 0 0 40px #3e679e;
+  margin-top: 13px;
+  border-radius: 5rem;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+.main__content {
+  margin-left: 45px;
+}
+.content-info {
+}
+.main__title {
+  font-size: 37px;
+  letter-spacing: 5px;
+  color: white;
+}
+.main__paragraph {
+  margin-top: 4px;
+  font-size: 15px;
+  color: #ffffffbf;
+}
+.content-skills {
+  margin-top: 15px;
+  width: 540px;
+  line-height: 2.5rem;
+}
+.skills {
+  margin-right: 7px;
+  border: 2px solid none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #303d4e;
+  color: var(--menu-nav-color);
 }
