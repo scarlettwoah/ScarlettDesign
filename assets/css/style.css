@@ -6,7 +6,8 @@
 }
 :root {
   --font-family: "Nunito Sans", sans-serif;
-  --menu-nav-text: #dee2e6;
+  --transparent-bg-color: rgb(37, 37, 37);
+  --menu-nav-color: #dee2e6;
 }
 a {
   text-decoration: none;
@@ -16,4 +17,117 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  background-color: rgb(37, 37, 37);
+}
+.bg-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  background-image: url(./../images/pictures/background.jpg);
+  background-size: cover;
+  filter: blur(6px);
+  transform: scale(1);
+  z-index: -1;
+  opacity: 60%;
+}
+.header {
+  font-family: var(--font-family);
+  color: var(--menu-nav-color);
+}
+.header__menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.logo {
+  width: 35vh;
+  height: 7vh;
+  object-fit: cover;
+}
+.header__menu-links {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 35%;
+  margin-top: 3.5px;
+  width: 70vh;
+  font-size: 16px;
+}
+.links {
+  position: relative;
+  transition: all 300ms ease;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+.links:hover {
+  transform: scale(1.2);
+}
+.link {
+  position: relative;
+  padding: 10px 6px;
+}
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  height: 1px;
+  width: 0;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  background: none repeat scroll 0 0 transparent;
+  background-color: var(--menu-nav-color);
+}
+.link:hover::after {
+  width: 100%;
+  left: 0;
+}
+.icons {
+  margin-right: 5px;
+}
+.header__toggle-btn {
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 30px;
+}
+.menu-icon {
+  padding: 5px 18px 15px 18px;
+}
+.header__dropdown-menu {
+  position: absolute;
+  border-radius: 10px;
+  right: 1.1rem;
+  top: 60px;
+  font-size: 15px;
+  line-height: 2;
+  background-color: rgba(45, 46, 46, 0.15);
+  box-shadow: 0 0 13px #92b8e4;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.header__dropdown-menu.open {
+  padding: 10px 20px;
+  height: 160px;
+}
+.dropdown-icons {
+  margin-right: 8px;
+  font-size: 16px;
+}
+.dropdown__border-line {
+  height: 0;
+  margin: 10px 0 10px 0;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
