@@ -6,14 +6,31 @@ const toggleBtn = document.querySelector(".header__toggle-btn");
 const toggleBtnIcon = document.querySelector(".header__toggle-btn i");
 const dropDownMenu = document.querySelector(".header__dropdown-menu");
 
-toggleBtn.onclick = function () {
-  dropDownMenu.classList.toggle("open");
+// toggleBtn.onclick = function () {
+//   dropDownMenu.classList.toggle("open");
 
-  const isOpen = dropDownMenu.classList.contains("open");
-  toggleBtnIcon.classList = isOpen
-    ? "fa-solid fa-xmark menu-icon"
-    : "fa-solid fa-bars menu-icon";
-};
+//   const isOpen = dropDownMenu.classList.contains("open");
+//   toggleBtnIcon.classList = isOpen
+//     ? "fa-solid fa-xmark menu-icon"
+//     : "fa-solid fa-bars menu-icon";
+// };
+
+toggleBtn.addEventListener("click", function () {
+  dropDownMenu.classList.toggle("open");
+  toggleBtnIcon.classList.toggle("fa-bars");
+  toggleBtnIcon.classList.toggle("fa-xmark");
+});
+
+document.addEventListener("click", function (event) {
+  if (
+    !toggleBtn.contains(event.target) &&
+    !dropDownMenu.contains(event.target)
+  ) {
+    dropDownMenu.classList.remove("open");
+    toggleBtnIcon.classList.remove("fa-xmark");
+    toggleBtnIcon.classList.add("fa-bars");
+  }
+});
 
 // ----------------------------------------------------------
 
