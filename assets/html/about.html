@@ -4,7 +4,125 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="./../images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./../css/about.css" />
+    <script src="./../js/index.js" defer></script>
+    <title>ScarlettDesign</title>
   </head>
-  <body></body>
+  <body>
+    <div class="bg-img"></div>
+    <header class="header">
+      <nav class="header__menu-container">
+        <a class="header__logo" href="/">
+          <img class="logo" src="./../images/pictures/logo.png" alt="logo" />
+        </a>
+        <ul class="header__menu-links">
+          <li class="links">
+            <a class="link" href="./../html/shop.html">
+              <i class="fa-solid fa-cart-shopping icons"></i>SHOP</a
+            >
+          </li>
+          <li class="links">
+            <a class="link" href="./../html/about.html"
+              ><i class="fa-solid fa-circle-info icons"></i>ABOUT</a
+            >
+          </li>
+          <li class="links">
+            <a class="link" href="./../html/donate.html"
+              ><i class="fa-solid fa-circle-dollar-to-slot icons"></i>DONATE</a
+            >
+          </li>
+        </ul>
+        <div class="header__toggle-btn">
+          <i class="fa-solid fa-bars menu-icon"></i>
+        </div>
+      </nav>
+      <div class="header__dropdown-menu">
+        <ul>
+          <li class="dropdown-link">
+            <a class="drpdwn-link" href="./../html/friends.html"
+              ><i class="fa-solid fa-user dropdown-icons"></i>??????</a
+            >
+          </li>
+          <li class="dropdown-link">
+            <a class="drpdwn-link" href="./../html/signIn.html"
+              ><i class="fa-solid fa-user-secret dropdown-icons"></i>Sign In</a
+            >
+          </li>
+          <hr class="dropdown__border-line" />
+          <li class="dropdown-link">
+            <a class="drpdwn-link" href="./../html/privacyPolicy.html"
+              ><i class="fa-solid fa-book-journal-whills dropdown-icons"></i
+              >Privacy Policy</a
+            >
+          </li>
+          <li class="dropdown-link">
+            <a class="drpdwn-link" href="./../html/termsAndConditions.html">
+              <i class="fa-solid fa-book dropdown-icons"></i>Terms and
+              Conditions</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <main class="main__container">
+        <h1 class="main__title1">ABOUT</h1>
+        <article class="main__article">
+          <p>
+            The
+            <a class="main__link" href="./../html/shop.html">catalog</a> shows
+            our products.
+          </p>
+          <p>We create custom web applications on a turnkey basis.</p>
+          <br />
+          <p>TECHNOLOGIES</p>
+          <br />
+          <p>
+            Html Css JavaScript ReactJS Redux React-Redux NodeJS PostgreSQL
+            MongoDB Docker
+          </p>
+          <br />
+          <h2 class="main__title2">Communication with admin.</h2>
+          <ul class="main__ul">
+            <li class="main__contacts-links">
+              <a class="main__link" href="https://t.me/scarlettwoah"
+                >Telegram</a
+              >
+            </li>
+            <li class="main__contacts-links">scarlettwoah@gmail.com</li>
+          </ul>
+          <br />
+          <div class="main__container2">
+            <a class="main__link" href="./../html/privacyPolicy.html"
+              >Privacy Policy</a
+            >
+            &&
+            <a
+              class="main__link margin-top"
+              href="./../html/termsAndConditions.html"
+              >Terms And Conditions</a
+            >
+          </div>
+        </article>
+      </main>
+    </main>
+  </body>
 </html>

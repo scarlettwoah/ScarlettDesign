@@ -48,10 +48,10 @@ body {
   opacity: 60%;
 }
 .header {
-  position: fixed;
+  /* position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   color: var(--menu-nav-color);
 }
 .header__menu-container {
