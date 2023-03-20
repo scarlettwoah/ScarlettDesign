@@ -49,10 +49,6 @@ body {
   z-index: -1;
   opacity: 60%;
 }
-.wrapper {
-  min-height: 100vh;
-  max-height: 100vh;
-}
 .header {
   font-weight: 700;
   color: var(--menu-nav-color);
