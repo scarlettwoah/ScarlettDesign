@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 :root {
-  --font-family: "Nunito Sans", sans-serif;
+  --font-family: "Nunito", sans-serif;
   --transparent-bg-color: rgb(37, 37, 37);
   --menu-nav-color: #dee2e6;
   --box-shadow-color: #3e679e;
@@ -14,6 +14,7 @@
   --dark-grey-color: #ffffffbf;
   --main-skills-color: #303d4e;
   --link-color: #6ea8fe;
+  --dark-paragraph-color: #f8f9fabf;
 }
 a {
   text-decoration: none;
@@ -49,10 +50,6 @@ body {
   opacity: 60%;
 }
 .header {
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  right: 0; */
   font-weight: 700;
   color: var(--menu-nav-color);
 }
@@ -149,17 +146,15 @@ body {
   border-top: 1px solid var(--border-line-color);
 }
 .main {
-  display: flex;
-  justify-content: center;
   margin-top: 20vh;
-  font-weight: 400;
 }
 .main__container {
+  margin: 0 auto;
   max-width: 400px;
 }
 .main__title1 {
   text-align: center;
-  font-size: 35px;
+  font-size: 40px;
   letter-spacing: 2px;
   color: var(--white-color-for-all);
 }

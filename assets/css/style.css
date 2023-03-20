@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 :root {
-  --font-family: "Nunito Sans", sans-serif;
+  --font-family: "Nunito", sans-serif;
   --transparent-bg-color: rgb(37, 37, 37);
   --menu-nav-color: #dee2e6;
   --box-shadow-color: #3e679e;
@@ -13,6 +13,8 @@
   --white-color-for-all: #fff;
   --dark-grey-color: #ffffffbf;
   --main-skills-color: #303d4e;
+  --link-color: #6ea8fe;
+  --dark-paragraph-color: #f8f9fabf;
 }
 a {
   text-decoration: none;
@@ -30,6 +32,7 @@ li {
 }
 body {
   font-family: var(--font-family);
+  font-weight: 700;
   background-color: var(--transparent-bg-color);
 }
 .bg-img {
@@ -48,10 +51,6 @@ body {
   opacity: 60%;
 }
 .header {
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  right: 0; */
   color: var(--menu-nav-color);
 }
 .header__menu-container {
