@@ -166,6 +166,10 @@ body {
 .main__link {
   color: var(--link-color);
 }
+.container {
+  display: flex;
+  justify-content: space-between;
+}
 .main__title2 {
   font-size: 18px;
   font-weight: 400;
@@ -178,6 +182,28 @@ body {
 .main__contacts-links {
   list-style-type: disc;
 }
+.icons-links {
+  display: flex;
+  margin-top: -5px;
+}
+.main__icon2 {
+  max-width: 37px;
+  height: 37px;
+}
+.main__icon {
+  margin-top: 3px;
+  max-width: 31px;
+  height: 31px;
+}
+.margin {
+  margin-left: 7px;
+}
+.size {
+  margin-left: 10px;
+  max-width: 33px;
+  height: 33px;
+}
 .main__container2 {
-  text-align: center;
+  margin-top: -10px;
+  text-align: start;
 }
