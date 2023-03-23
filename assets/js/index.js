@@ -1,6 +1,6 @@
 "use strict";
 
-//menu icon in header
+//menu icon in header.
 
 const toggleBtn = document.querySelector(".header__toggle-btn");
 const toggleBtnIcon = document.querySelector(".header__toggle-btn i");
@@ -34,16 +34,17 @@ document.addEventListener("click", function (event) {
 
 // ----------------------------------------------------------
 
-//bg-color in dropdown menu on click
+// bg-color in dropdown menu on click.
 
 const drpdwnLink = document.querySelectorAll(".drpdwn-link");
 
 drpdwnLink.forEach(function (element) {
   element.addEventListener("click", function () {
-    element.style.backgroundColor = "#214675";
+    element.style.backgroundColor = "#2375f1";
     setTimeout(function () {
       element.style.backgroundColor = "";
-    }, 200);
+    }, 100);
   });
 });
+
 // ----------------------------------------------------------

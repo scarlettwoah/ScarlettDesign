@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./../images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./../css/signIn.css" />
+    <script src="./../js/registerForm.js" defer></script>
+    <script src="./../js/index.js" defer></script>
+    <title>ScarlettDesign</title>
+  </head>
+  <body>
+    <div class="bg-img"></div>
+    <header class="header">
+      <nav class="header__menu-container">
+        <a class="header__logo" href="/">
+          <img class="logo" src="./../images/pictures/logo.png" alt="logo" />
+        </a>
+        <ul class="header__menu-links">
+          <li class="links">
+            <a class="link" href="./../html/shop.html">
+              <i class="fa-solid fa-cart-shopping icons"></i>SHOP</a
+            >
+          </li>
+          <li class="links">
+            <a class="link" href="./../html/about.html"
+              ><i class="fa-solid fa-circle-info icons"></i>ABOUT</a
+            >
+          </li>
+          <li class="links">
+            <a class="link" href="./../html/donate.html"
+              ><i class="fa-solid fa-circle-dollar-to-slot icons"></i>DONATE</a
+            >
+          </li>
+        </ul>
+        <div class="icons-container">
+          <div class="btnlogin-popup">
+            <i class="fa-solid fa-user menu-icon1"></i>
+          </div>
+          <div class="header__toggle-btn">
+            <i class="fa-solid fa-bars menu-icon2"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="header__dropdown-menu">
+        <ul>
+          <li class="dropdown-link">
+            <a class="drpdwn-link" href="./../html/friends.html"
+              ><i class="fa-solid fa-user dropdown-icons"></i>??????</a
+            >
+          </li>
+          <li class="dropdown-link">
+            <a class="drpdwn-link" href="./../html/signIn.html"
+              ><i class="fa-solid fa-user-secret dropdown-icons"></i>Sign In</a
+            >
+          </li>
+          <hr class="dropdown__border-line" />
+          <li class="dropdown-link">
+            <a class="drpdwn-link" href="./../html/privacyPolicy.html"
+              ><i class="fa-solid fa-book-journal-whills dropdown-icons"></i
+              >Privacy Policy</a
+            >
+          </li>
+          <li class="dropdown-link">
+            <a class="drpdwn-link" href="./../html/termsAndConditions.html">
+              <i class="fa-solid fa-book dropdown-icons"></i>Terms and
+              Conditions</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <div class="wrapper">
+        <span class="icon-close">
+          <i class="fa-solid fa-xmark icon"></i>
+        </span>
+        <div class="form-box login">
+          <h2>Login</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+              <input type="mail" required />
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="fa-solid fa-lock"></i></span>
+              <input type="password" required />
+              <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label><input type="checkbox" />Remember me</label>
+              <a href="./../html/forgotPassword.html">Forgot Password?</a>
+            </div>
+            <button class="btn" type="submit">Login</button>
+            <div class="login-register">
+              <p>
+                Don`t have an account?<a class="register-link" href="#"
+                  >Register</a
+                >
+              </p>
+            </div>
+          </form>
+        </div>
+        <div class="form-box register">
+          <h2>Registration</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="icon"><i class="fa-solid fa-user"></i></span>
+              <input type="text" required />
+              <label>Username</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+              <input type="mail" required />
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><i class="fa-solid fa-lock"></i></span>
+              <input type="password" required />
+              <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+              <label
+                ><input type="checkbox" />I agree to the terms &
+                conditions</label
+              >
+            </div>
+            <button class="btn" type="submit">Register</button>
+            <div class="login-register">
+              <p>
+                Already have an account?<a class="login-link" href="#">Login</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
