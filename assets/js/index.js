@@ -48,3 +48,15 @@ drpdwnLink.forEach(function (element) {
 });
 
 // ----------------------------------------------------------
+
+//donate page animation.
+
+const showTextBtn = document.querySelector(".main__button");
+const hiddenText = document.querySelector(".main__invisible-paragraph");
+
+showTextBtn.addEventListener("click", () => {
+  hiddenText.classList.add("visible");
+  setTimeout(() => {
+    hiddenText.classList.remove("visible");
+  }, 3000);
+});
